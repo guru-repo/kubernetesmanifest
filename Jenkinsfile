@@ -16,7 +16,7 @@ node("agent12") {
                         sh "git config user.name guru-repo"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+raj80dockerid/test.*+guruturbo/test:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+371559253103.dkr.ecr.us-east-2.amazonaws.com/test.*+371559253103.dkr.ecr.us-east-2.amazonaws.com/test:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
