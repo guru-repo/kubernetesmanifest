@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: guruturbo/test:6
+      - image: 371559253103.dkr.ecr.us-east-2.amazonaws.com/test:6
         name: flaskdemo
         resources: {}
 status: {}
